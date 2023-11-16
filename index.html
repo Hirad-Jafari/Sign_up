@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirad jafari - Sign up</title>
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assest/css/master.css">
+</head>
+<body>
+    <div class="form">
+        <ul class="group">
+            <li class="tab active">
+                <a href="#" id="sign">Sign up</a>
+            </li>
+            <li class="tab">
+                <a href="#" id="login">Log in</a>
+            </li>
+        </ul>
+
+        <div class="content">
+            <div id="signup">
+                <h2>Sign Up for free</h2>
+                <form class="row">
+                    <div class="field">
+                        <label>
+                            First Name:
+                        </label>
+                        <input type="text" required autocomplete="off">
+                    </div>
+
+                    <div class="field">
+                        <label>
+                            Last Name:
+                        </label>
+                        <input type="text" required autocomplete="off">
+                    </div>
+
+                    <div class="field">
+                        <label>
+                            Email Address:
+                        </label>
+                        <input type="email" required autocomplete="off">
+                    </div>
+                    
+                    <div class="field">
+                        <label>
+                            Set Password:
+                        </label>
+                        <input type="password" required autocomplete="off">
+                    </div>
+                    
+                    <button type="submit" class="button">
+                        Get start!
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div id="login-2" style="display: none;">
+                <h2>Welcome Back.</h2>
+                <form action="/">
+                    <div class="field">
+                        <label>
+                            Email Address:
+                        </label>
+                        <input type="email" required autocomplete="off">
+                    </div>
+
+                    <div class="field">
+                        <label>
+                            Password:
+                        </label>
+                        <input type="password" required autocomplete="off">
+                    </div>
+
+                    <button class="button" id="butt">
+                        Log In
+                    </button>
+
+                </form>
+            </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        function SignUp() {
+            document.getElementById('signup').style.display = 'block';  
+            document.getElementById('login-2').style.display = 'none';  
+        }
+        
+        function LogIn() {
+            document.getElementById('signup').style.display = 'none';  
+            document.getElementById('login-2').style.display = 'block';  
+        }
+ 
+        document.getElementById('login').addEventListener('click', LogIn); 
+        document.getElementById('sign').addEventListener('click', SignUp);
+    </script>
+</body>
+</html>

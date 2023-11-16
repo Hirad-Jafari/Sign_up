@@ -1,0 +1,121 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #727272;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(2, 5, 196);
+    &:hover{
+        color: rgb(81, 80, 80);
+    }
+}
+.form{
+    background-color: #111e28;
+    padding: 40px;
+    width: 600px;
+    margin: 40px auto;
+    border-radius: 5px;
+}
+.group{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 42px 0;
+    &:after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    li a{
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+        background-color: rgba(148, 148, 148, 0.555);
+        color: #a0b3b0;
+        font-size: 20px;
+        float: left;
+        text-align: center;
+        width: 50%;
+        &:hover{
+            background-color: #020045;
+            color: white;
+        }
+    }
+    .active a{
+        background-color: #020045;
+        color: white;
+    }
+}
+h2{
+    text-align: center;
+    color: white;
+    margin: 0 0 40px;
+}
+label{
+    position: absolute;
+    transform: translatYZ(7px);
+    left: 14px;
+    color: whitesmoke, 0.5;
+    font-size: 23px;
+}
+.label.active{
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+}
+input,
+textarea{
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid black;
+    color: white;
+}
+textarea{
+    border: 2px solid rgb(64, 64, 64);
+    resize: vertical;
+}
+.field{
+    position: relative;
+    margin-bottom: 40px;
+}
+.row{
+    &::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    >div{
+        float: left;
+        width: 45%;
+        margin-right: 4%;
+        &:last-child{
+            margin: 0;
+        }
+    }
+}
+
+.button{
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background-color: rgb(31, 0, 90);
+    color: white; 
+}
+.button-block{
+    display: block;
+    width: 100%;
+}
+  
